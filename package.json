@@ -1,0 +1,21 @@
+{
+  "name": "gold-spot-discord-bot",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Discord bot for live gold and silver spot prices, karat-aware value calculations, alerts, scheduled posts, and a live gold-price status.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "register": "node src/register-commands.js",
+    "register:global": "node src/register-commands.js --global",
+    "clear:guild": "node src/register-commands.js --clear-guild"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.2"
+  }
+}
